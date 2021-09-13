@@ -1,0 +1,27 @@
+main {
+  padding: 1rem 0;
+}
+
+.home-container {
+  display: flex;
+}
+
+.main {
+  width: 75%;
+}
+
+aside {
+  width: 25%;
+}
+
+@media screen and (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .main {
+    width: 100%;
+  }
+  aside {
+    width: 40%;
+  }
+}

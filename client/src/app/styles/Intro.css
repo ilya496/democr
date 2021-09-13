@@ -1,0 +1,80 @@
+.intro {
+  width: 100%;
+  background: url("../assets/images/intro.jpg");
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+  height: 450px;
+  color: #fff;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  height: 450px;
+}
+
+.intro-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
+}
+
+.intro .greeting {
+  font-size: 5rem;
+}
+
+.desc {
+  font-size: 1.7rem;
+  margin-bottom: 0.3rem;
+}
+
+.github-link {
+  color: #5177c4;
+  font-size: 1.15rem;
+  transition: all ease-in-out 250ms;
+}
+.github-link:hover::after {
+  content: "";
+  background-color: #fff;
+  height: 10px;
+  z-index: 5px;
+}
+
+@media screen and (max-width: 1150px) {
+  .intro .greeting {
+    font-size: 3.5rem;
+  }
+
+  .desc {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .intro .greeting {
+    font-size: 2.5rem;
+  }
+
+  .desc {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .intro-container {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .intro .greeting {
+    font-size: 2rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+}

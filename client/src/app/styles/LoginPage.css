@@ -1,0 +1,183 @@
+a {
+  text-decoration: none;
+}
+
+.login-container {
+  display: flex;
+  width: 100%;
+}
+
+.bg-container {
+  width: 50%;
+  height: calc(100vh - 75px);
+}
+
+.bg-container img {
+  height: calc(100vh - 75px);
+  width: 100%;
+}
+
+.auth-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 75px);
+}
+
+.auth-content {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.greeting {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 1.6rem;
+}
+
+label p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.input {
+  width: calc(100% - 31px);
+  height: 50px;
+  border: 1px #e8e8e8 solid;
+  padding: 5px 15px;
+  font-size: 1rem;
+}
+
+.input::placeholder {
+  font-size: 1rem;
+}
+
+.input:focus {
+  border: 1px dashed red;
+  outline: none;
+}
+
+.input:focus::placeholder {
+  font-weight: 400;
+  color: #000;
+}
+
+.remember-pass {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.remember-pass a {
+  color: #2b6cb0;
+}
+
+.buttons {
+  width: 100%;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 13px 0;
+  margin-bottom: 15px;
+  background-color: #04c35c;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background-color: #99d5b4;
+}
+
+.google-btn {
+  background-color: #2d3748;
+}
+
+.google-btn:disabled {
+  background-color: #4f5258;
+}
+
+.register-acc {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.register-acc a {
+  margin-left: 0.5rem;
+  color: #2b6cb0;
+}
+
+.test {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+#eye {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 15px;
+  cursor: pointer;
+}
+
+.error {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1075px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .greeting {
+    font-size: 2.5rem;
+  }
+  .auth-content {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .auth-content {
+    width: 85%;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .input {
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .auth-container {
+    width: 100%;
+    background: url("../assets/images/container-bg.png");
+  }
+
+  .bg-container {
+    display: none;
+  }
+
+  .register-acc {
+    color: #fff;
+  }
+}

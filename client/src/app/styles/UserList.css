@@ -1,0 +1,87 @@
+.users-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-right: 0.25rem;
+}
+
+.user-status {
+  margin-left: 0.1rem;
+  margin-right: 0.2rem;
+  font-style: italic;
+}
+
+.fa-toggle-on {
+  color: rgb(24, 198, 73);
+}
+
+.fa-toggle-off {
+  color: rgb(198, 24, 73);
+}
+
+.fa-toggle-on,
+.fa-toggle-off {
+  transform: scale(1.4);
+  margin-left: 0.5rem;
+}
+
+.show-btn {
+  margin-top: 0.7rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.015em;
+  width: 100%;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.show-btn:disabled {
+  cursor: not-allowed;
+}
+
+.sm {
+  padding: 0.5rem 0;
+}
+
+.lg {
+  padding: 1rem;
+}
+
+.success {
+  background-color: rgb(54, 189, 42);
+}
+
+.success:hover {
+  background-color: rgb(47, 148, 38);
+}
+
+.success:disabled {
+  background-color: rgb(100, 253, 94);
+  opacity: 0.75;
+}
+
+.danger {
+  background-color: orangered;
+}
+
+.danger:hover {
+  background-color: rgb(211, 56, 0);
+}
+
+.danger:disabled {
+  opacity: 0.75;
+  background-color: rgb(255, 104, 104);
+}

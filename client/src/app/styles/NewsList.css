@@ -1,0 +1,18 @@
+.news {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-item {
+  margin-bottom: 0.7rem;
+}
+
+.news-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 0.1rem;
+}
+
+.news-content {
+  font-size: 1.05em;
+}

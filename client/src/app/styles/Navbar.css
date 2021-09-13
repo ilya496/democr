@@ -1,0 +1,194 @@
+header {
+  background-color: #191970;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 75px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  padding: 5px 0;
+}
+
+nav,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-li:first-of-type {
+  margin-left: 0;
+}
+
+nav .nav-li {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+.nav-li a,
+.nav-li button {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: #d8bfd8;
+  position: relative;
+}
+
+.nav-li a::before,
+.nav-li button::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  top: -26px;
+  background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
+  transition: all ease-in-out 250ms;
+}
+
+.nav-li a:hover,
+.nav-li button:hover {
+  color: #fff;
+}
+
+.nav-li a:hover::before,
+.nav-li button:hover::before {
+  width: 100%;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.cross {
+  transition: all ease-in-out 250ms;
+  z-index: 6;
+  cursor: pointer;
+  width: 10%;
+  text-align: center;
+  height: fit-content;
+}
+
+.cross:hover {
+  animation: rotate 0.8s 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cross i {
+  font-size: 1.5rem;
+}
+
+.dropdown {
+  position: absolute;
+  top: 10%;
+  right: 17%;
+  z-index: 5;
+  background-color: darkslateblue;
+  border-radius: 5px;
+  width: 250px;
+  min-height: 100px;
+  display: flex;
+  padding: 0.75rem;
+}
+
+.dropdown-link {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 0.35rem;
+  border-radius: 5px;
+  padding: 0.75rem;
+  transition: all 200ms ease-in-out;
+}
+
+.dropdown-link:last-of-type {
+  margin-bottom: 0;
+}
+
+.dropdown-link:hover {
+  background-color: dodgerblue;
+}
+
+.fa-newspaper {
+  color: #babd92;
+  transform: scale(1.1);
+  margin-right: 0.3rem;
+}
+
+.fa-comments {
+  color: rgb(24, 132, 255);
+  transform: scale(1.1);
+  margin-right: 0.3rem;
+}
+
+.fa-gamepad {
+  color: #000;
+  transform: scale(1.1);
+  margin-right: 0.3rem;
+}
+
+.email {
+  color: #fff;
+}
+
+.account-link {
+  text-decoration: underline;
+  color: #839ec7;
+  cursor: pointer;
+}
+
+.account-link:hover {
+  color: #696eaf;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    width: 85%;
+  }
+
+  .nav-li {
+    margin-left: 55px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .nav-li {
+    margin-left: 40px;
+    font-size: 16px;
+  }
+  .email {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .email {
+    font-size: 0.9rem;
+  }
+}

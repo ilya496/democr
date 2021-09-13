@@ -1,0 +1,15 @@
+/* MAIN ADMIN PAGE */
+
+.admin-container {
+  padding: 1rem 0;
+}
+
+.admin-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.admin-link.title {
+  margin-bottom: 0.5rem;
+}
+
+/* ALL OTHER PAGE BESIDES MAIN */
